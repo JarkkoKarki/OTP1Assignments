@@ -1,4 +1,4 @@
-package HomeAssignmentWK3;
+package WK3.HomeAssignmentWK3;
 
 public class Account {
     double balance;

@@ -1,4 +1,4 @@
-package HomeAssignmentWK3;
+package WK3.HomeAssignmentWK3;
 
 import org.junit.jupiter.api.Test;
 
