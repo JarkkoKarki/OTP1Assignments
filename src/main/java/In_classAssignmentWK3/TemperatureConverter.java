@@ -1,3 +1,5 @@
+package In_classAssignmentWK3;
+
 public class TemperatureConverter {
     public double fahrenheitToCelsius(double fahrenheit) {
         double celsius = (fahrenheit - 32) * 5 / 9;
