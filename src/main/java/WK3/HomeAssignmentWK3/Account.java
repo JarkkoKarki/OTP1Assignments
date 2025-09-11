@@ -8,11 +8,13 @@ public class Account {
     }
 
     public void deposit(Double amount) {
-        balance += amount;
+        if (amount > 0) {
+            balance += amount;
+        }
     }
 
     public double withdraw(double amount) {
-        if (balance >= amount) {
+        if (balance >= amount && amount > 0) {
             balance -= amount;
             return amount;
         }
