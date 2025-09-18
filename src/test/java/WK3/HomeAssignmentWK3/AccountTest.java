@@ -13,6 +13,9 @@ class AccountTest {
 
         account.deposit(50.0);
         assertEquals(150.0, account.getBalance(), 0.01);
+
+        account.deposit(-100.0);
+        assertEquals(150, account.getBalance(), 0.01);
     }
 
     @Test
@@ -25,6 +28,11 @@ class AccountTest {
         withdrawn = account.withdraw(200.0);
         assertEquals(0.0, withdrawn, 0.01);
         assertEquals(150.0, account.getBalance(), 0.01);
+
+        withdrawn = account.withdraw(-200.0);
+        assertEquals(0.0, withdrawn, 0.01);
+        assertEquals(150.0, account.getBalance(), 0.01);
+
     }
 
     @Test
