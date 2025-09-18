@@ -1,4 +1,4 @@
-package WK3.In_classAssignmentWK3;
+package WK3.ClassAssignmentWK3;
 
 public class TemperatureConverter {
     public double fahrenheitToCelsius(double fahrenheit) {
@@ -16,5 +16,9 @@ public class TemperatureConverter {
             return true;
         }
         return false;
+    }
+
+    public double kelvinToCelsius(double kelvin) {
+        return  kelvin - 273.15;
     }
 }

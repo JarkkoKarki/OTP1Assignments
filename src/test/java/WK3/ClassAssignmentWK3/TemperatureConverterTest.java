@@ -1,6 +1,6 @@
-package WK3.In_classAssignmentWK3;
+package WK3.ClassAssignmentWK3;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TemperatureConverterTest {
@@ -27,5 +27,10 @@ public class TemperatureConverterTest {
         assertTrue(converter.isExtremeTemperature(51));
         assertFalse(converter.isExtremeTemperature(0));
         assertFalse(converter.isExtremeTemperature(25));
+    }
+
+    @Test
+    public void kelvinToCelsius() {
+        assertEquals(26.85, converter.kelvinToCelsius(300), 0.01);
     }
 }
