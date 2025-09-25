@@ -1,13 +1,13 @@
 package WK3.HomeAssignmentWK3;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static junit.framework.TestCase.assertEquals;
 
-class AccountTest {
+public class AccountTest {
     Account account = new Account();
     @Test
-    void deposit() {
+    public void deposit() {
         account.deposit(100.0);
         assertEquals(100.0, account.getBalance(), 0.01);
 
@@ -19,7 +19,7 @@ class AccountTest {
     }
 
     @Test
-    void withdraw() {
+    public void withdraw() {
         account.deposit(200.0);
         double withdrawn = account.withdraw(50.0);
         assertEquals(50.0, withdrawn, 0.01);
@@ -36,7 +36,7 @@ class AccountTest {
     }
 
     @Test
-    void getBalance() {
+    public void getBalance() {
         account.deposit(300.0);
         assertEquals(300.0, account.getBalance(), 0.01);
     }
