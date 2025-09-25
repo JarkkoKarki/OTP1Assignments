@@ -17,7 +17,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch:'master', url:'https://github.com/JarkkoKarki/OTPWeek6.git'
+                git branch:'master', url:'https://github.com/JarkkoKarki/OTP1Assignments.git'
             }
         }
         stage('Build') {
